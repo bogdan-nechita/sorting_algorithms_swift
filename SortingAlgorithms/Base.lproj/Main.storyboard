@@ -22,119 +22,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grv-Zx-wjp">
-                                <rect key="frame" x="16" y="434" width="343" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorted array:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2n-lK-aZE">
-                                <rect key="frame" x="16" y="405" width="343" height="21"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9vN-qv-1iI">
+                                <rect key="frame" x="16" y="56" width="343" height="575"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Array to sort:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FD-pe-xwD">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Lpw-da-y7V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-hg-Ty0">
+                                        <rect key="frame" x="0.0" y="61" width="343" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="RXR-Sb-Z1S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insertion sort:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqT-Hj-unh">
+                                        <rect key="frame" x="0.0" y="161" width="106.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="RGC-qg-rSM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NzM-NK-04Z">
+                                        <rect key="frame" x="0.0" y="222" width="247" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-ue-wzs">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Sort ascending"/>
+                                                <connections>
+                                                    <action selector="insertionSortAscending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhb-XE-Hme"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj2-Y1-cIe">
+                                                <rect key="frame" x="134" y="0.0" width="113" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Sort descending"/>
+                                                <connections>
+                                                    <action selector="insertionSortDescending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tzo-Xj-t5g"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="KsQ-3J-L3g"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection sort:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZC-gv-0cS">
+                                        <rect key="frame" x="0.0" y="292" width="111" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="gJS-0P-qAh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Tn-DO-lcF">
+                                        <rect key="frame" x="0.0" y="353" width="247" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m25-h0-79k">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="30"/>
+                                                <state key="normal" title="Sort ascending"/>
+                                                <connections>
+                                                    <action selector="selectionSortAscending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teI-YU-Q5P"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIJ-O4-nV0">
+                                                <rect key="frame" x="134" y="0.0" width="113" height="30"/>
+                                                <state key="normal" title="Sort descending"/>
+                                                <connections>
+                                                    <action selector="selectionSortDescending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eq5-Jf-hax"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="leo-Ds-D9p"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorted array:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2n-lK-aZE">
+                                        <rect key="frame" x="0.0" y="423" width="100" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7eF-wQ-mnY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grv-Zx-wjp">
+                                        <rect key="frame" x="0.0" y="484" width="343" height="91"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="7eF-wQ-mnY"/>
+                                    <constraint firstAttribute="trailing" secondItem="grv-Zx-wjp" secondAttribute="trailing" id="7Nu-qv-5OC"/>
+                                    <constraint firstItem="aA8-hg-Ty0" firstAttribute="leading" secondItem="9vN-qv-1iI" secondAttribute="leading" id="TvC-P7-mwz"/>
+                                    <constraint firstItem="grv-Zx-wjp" firstAttribute="leading" secondItem="9vN-qv-1iI" secondAttribute="leading" id="XML-zp-aux"/>
+                                    <constraint firstAttribute="trailing" secondItem="aA8-hg-Ty0" secondAttribute="trailing" id="XZE-VP-s65"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-ue-wzs">
-                                <rect key="frame" x="16" y="243" width="129" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Sort ascending"/>
-                                <connections>
-                                    <action selector="insertionSortAscending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhb-XE-Hme"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj2-Y1-cIe">
-                                <rect key="frame" x="153" y="248" width="144" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Sort descending"/>
-                                <connections>
-                                    <action selector="insertionSortDescending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tzo-Xj-t5g"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insertion sort:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqT-Hj-unh">
-                                <rect key="frame" x="16" y="214" width="107" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="RGC-qg-rSM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection sort:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZC-gv-0cS">
-                                <rect key="frame" x="16" y="286" width="111" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="gJS-0P-qAh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m25-h0-79k">
-                                <rect key="frame" x="28" y="318" width="104" height="30"/>
-                                <state key="normal" title="Sort ascending"/>
-                                <connections>
-                                    <action selector="selectionSortAscending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teI-YU-Q5P"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIJ-O4-nV0">
-                                <rect key="frame" x="169" y="318" width="113" height="30"/>
-                                <state key="normal" title="Sort descending"/>
-                                <connections>
-                                    <action selector="selectionSortDescending:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eq5-Jf-hax"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Array to sort:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FD-pe-xwD">
-                                <rect key="frame" x="16" y="62" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Lpw-da-y7V"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-hg-Ty0">
-                                <rect key="frame" x="16" y="91" width="343" height="57"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="iZP-sF-epQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="hqT-Hj-unh" secondAttribute="leading" id="0GZ-eF-0Ri"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hqT-Hj-unh" secondAttribute="trailing" constant="236" id="4h8-7K-Mfd"/>
-                            <constraint firstItem="m25-h0-79k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4x8-8Q-m7X"/>
-                            <constraint firstItem="ZIJ-O4-nV0" firstAttribute="leading" secondItem="m25-h0-79k" secondAttribute="trailing" constant="37" id="5d1-ja-bv4"/>
-                            <constraint firstItem="m25-h0-79k" firstAttribute="top" secondItem="EZC-gv-0cS" secondAttribute="bottom" constant="11" id="90J-CR-yiz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Y2n-lK-aZE" secondAttribute="trailing" id="9KU-E1-1jK"/>
-                            <constraint firstItem="0V4-ue-wzs" firstAttribute="top" secondItem="hqT-Hj-unh" secondAttribute="bottom" constant="8" id="BNV-2J-8Nb"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="1FD-pe-xwD" secondAttribute="leading" id="CWJ-Rf-Vv9"/>
-                            <constraint firstItem="EZC-gv-0cS" firstAttribute="leading" secondItem="hqT-Hj-unh" secondAttribute="leading" id="CX7-F5-Al4"/>
-                            <constraint firstItem="hqT-Hj-unh" firstAttribute="top" secondItem="aA8-hg-Ty0" secondAttribute="bottom" constant="66" id="DE5-Ub-vGb"/>
-                            <constraint firstItem="m25-h0-79k" firstAttribute="centerX" secondItem="0V4-ue-wzs" secondAttribute="centerX" id="EVU-Xi-eDr"/>
-                            <constraint firstItem="Kj2-Y1-cIe" firstAttribute="leading" secondItem="0V4-ue-wzs" secondAttribute="trailing" constant="8" id="EaO-3c-ggu"/>
-                            <constraint firstItem="Y2n-lK-aZE" firstAttribute="top" secondItem="m25-h0-79k" secondAttribute="bottom" constant="57" id="KYa-vI-kOg"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="grv-Zx-wjp" secondAttribute="bottom" constant="105" id="MXJ-D4-5Zl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1FD-pe-xwD" secondAttribute="trailing" id="Mj3-h1-qNU"/>
-                            <constraint firstItem="ZIJ-O4-nV0" firstAttribute="centerX" secondItem="Kj2-Y1-cIe" secondAttribute="centerX" id="Mpu-1f-jm8"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="aA8-hg-Ty0" secondAttribute="leading" id="N6b-AI-aWt"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="grv-Zx-wjp" secondAttribute="leading" id="RbD-Yw-kqK"/>
-                            <constraint firstItem="EZC-gv-0cS" firstAttribute="top" secondItem="0V4-ue-wzs" secondAttribute="bottom" constant="8" id="Ukm-M6-Xi3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aA8-hg-Ty0" secondAttribute="trailing" id="Xxn-7U-efM"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Y2n-lK-aZE" secondAttribute="leading" id="aqM-uh-nyZ"/>
-                            <constraint firstItem="ZIJ-O4-nV0" firstAttribute="top" secondItem="EZC-gv-0cS" secondAttribute="bottom" constant="11" id="chr-cQ-RaI"/>
-                            <constraint firstItem="m25-h0-79k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="dQS-C8-I4j"/>
-                            <constraint firstItem="1FD-pe-xwD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="dbv-pH-VLZ"/>
-                            <constraint firstItem="EZC-gv-0cS" firstAttribute="leading" secondItem="0V4-ue-wzs" secondAttribute="leading" id="fYr-DQ-kGS"/>
-                            <constraint firstItem="grv-Zx-wjp" firstAttribute="top" secondItem="Y2n-lK-aZE" secondAttribute="bottom" constant="8" id="mYF-ky-5kn"/>
-                            <constraint firstItem="aA8-hg-Ty0" firstAttribute="top" secondItem="1FD-pe-xwD" secondAttribute="bottom" constant="8" id="qaR-Hi-NDV"/>
-                            <constraint firstItem="Kj2-Y1-cIe" firstAttribute="top" secondItem="hqT-Hj-unh" secondAttribute="bottom" constant="13" id="se1-7S-0ze"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="grv-Zx-wjp" secondAttribute="trailing" id="xIR-AC-8aF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9vN-qv-1iI" secondAttribute="trailing" id="Umh-ai-Xzl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9vN-qv-1iI" secondAttribute="leading" id="ZL8-hF-orj"/>
+                            <constraint firstItem="9vN-qv-1iI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="qLi-vl-eqF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9vN-qv-1iI" secondAttribute="bottom" constant="36" id="wQp-Z3-Ty4"/>
                         </constraints>
                     </view>
                     <connections>

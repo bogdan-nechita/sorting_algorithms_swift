@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayToSort.text = SortingAlgorithms.flattenArray(inputArray: inputArray)
+        //arrayToSort.text = SortingAlgorithms.flattenArray(inputArray: inputArray)
     }
 
     override func didReceiveMemoryWarning() {
