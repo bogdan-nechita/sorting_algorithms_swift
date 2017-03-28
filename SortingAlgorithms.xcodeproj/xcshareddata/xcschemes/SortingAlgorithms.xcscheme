@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "437F805A1E8A8DF2009B6CEC"
+               BlueprintIdentifier = "43206AF91E8AA34800422B47"
                BuildableName = "SortingAlgorithmsTests.xctest"
                BlueprintName = "SortingAlgorithmsTests"
                ReferencedContainer = "container:SortingAlgorithms.xcodeproj">
@@ -96,6 +96,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Sorting Algorithms"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
