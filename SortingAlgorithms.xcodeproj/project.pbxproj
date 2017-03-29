@@ -415,6 +415,7 @@
 				43206B031E8AA34800422B47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

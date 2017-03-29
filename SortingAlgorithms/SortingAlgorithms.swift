@@ -50,11 +50,16 @@ class SortingAlgorithms {
     
     // MARK: Utilities
     
-    // Turn and array of integers in a String.
+    // Turn an array of integers in a String.
     class func flattenArray(inputArray: [Int]) -> String {
         return inputArray.map({ item in
             item != inputArray.last ? String("\(item), ") : String("\(item)")
         }).joined()
+    }
+    
+    // Turn a string with comma-separated numbers into an Array of Ints.
+    class func makeArrayFromString(sourceString: String) -> [Int] {
+        return sourceString.components(separatedBy: ",").map({ Int($0)! })
     }
     
     // Swap two elements in an array on integers.
