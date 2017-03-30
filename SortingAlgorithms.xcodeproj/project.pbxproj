@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08CE774885C1BD6B89204082 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED020556FD77085FE868707F /* SystemConfiguration.framework */; };
+		124F7549624CD16612DD4B1E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5712D52F00EC4C11390FBB /* CoreTelephony.framework */; };
 		431AE83A1E7C282700F887A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AE8391E7C282700F887A0 /* AppDelegate.swift */; };
 		431AE83C1E7C282700F887A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AE83B1E7C282700F887A0 /* ViewController.swift */; };
 		431AE83F1E7C282700F887A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431AE83D1E7C282700F887A0 /* Main.storyboard */; };
@@ -14,6 +16,13 @@
 		431AE8441E7C282700F887A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431AE8421E7C282700F887A0 /* LaunchScreen.storyboard */; };
 		43206AFD1E8AA34800422B47 /* SortingAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43206AFC1E8AA34800422B47 /* SortingAlgorithmsTests.swift */; };
 		437F22841E80233B00924101 /* SortingAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437F22831E80233B00924101 /* SortingAlgorithms.swift */; };
+		77555199C55AE1C7A27EC6EA /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99925F3826B6CAE7CC9B7220 /* BuddyBuildSDK.framework */; };
+		8B4CC173203F3EB24F92729C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C834A736F91F7F5034F33434 /* QuartzCore.framework */; };
+		9EA4243AB55B0BAD6B8DAEAF /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA477872D9C0F4185293B860 /* AssetsLibrary.framework */; };
+		D24B2D2F736F7F9F8A02737C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A879468D5DFC0B8AF6CF11 /* CoreMedia.framework */; };
+		D24F90B3E82B19F3E0D74763 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E16DC1355CC29FDF9B40BF /* CoreVideo.framework */; };
+		EC55B73596A93487AE2D9107 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D30658F48BAF0C3DEEF884B /* CoreText.framework */; };
+		F104C7D78C1FDB35865CF69F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607C2E4292D881B4F2B2B212 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D30658F48BAF0C3DEEF884B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		12A879468D5DFC0B8AF6CF11 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		431AE8361E7C282700F887A0 /* SortingAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortingAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		431AE8391E7C282700F887A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SortingAlgorithms/AppDelegate.swift; sourceTree = "<group>"; };
 		431AE83B1E7C282700F887A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SortingAlgorithms/ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +49,14 @@
 		43206AFC1E8AA34800422B47 /* SortingAlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingAlgorithmsTests.swift; sourceTree = "<group>"; };
 		43206AFE1E8AA34800422B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437F22831E80233B00924101 /* SortingAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortingAlgorithms.swift; path = SortingAlgorithms/SortingAlgorithms.swift; sourceTree = "<group>"; };
+		607C2E4292D881B4F2B2B212 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8B5712D52F00EC4C11390FBB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9485FBA4021F235242A548E7 /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		99925F3826B6CAE7CC9B7220 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		C834A736F91F7F5034F33434 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DA477872D9C0F4185293B860 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		ED020556FD77085FE868707F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F4E16DC1355CC29FDF9B40BF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77555199C55AE1C7A27EC6EA /* BuddyBuildSDK.framework in Frameworks */,
+				9EA4243AB55B0BAD6B8DAEAF /* AssetsLibrary.framework in Frameworks */,
+				EC55B73596A93487AE2D9107 /* CoreText.framework in Frameworks */,
+				124F7549624CD16612DD4B1E /* CoreTelephony.framework in Frameworks */,
+				08CE774885C1BD6B89204082 /* SystemConfiguration.framework in Frameworks */,
+				8B4CC173203F3EB24F92729C /* QuartzCore.framework in Frameworks */,
+				F104C7D78C1FDB35865CF69F /* AVFoundation.framework in Frameworks */,
+				D24B2D2F736F7F9F8A02737C /* CoreMedia.framework in Frameworks */,
+				D24F90B3E82B19F3E0D74763 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +98,8 @@
 				431AE8451E7C282700F887A0 /* Info.plist */,
 				43206AFB1E8AA34800422B47 /* SortingAlgorithmsTests */,
 				431AE8371E7C282700F887A0 /* Products */,
+				655A957798910DE3EC7F8E23 /* Frameworks */,
+				9485FBA4021F235242A548E7 /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +119,22 @@
 				43206AFE1E8AA34800422B47 /* Info.plist */,
 			);
 			path = SortingAlgorithmsTests;
+			sourceTree = "<group>";
+		};
+		655A957798910DE3EC7F8E23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99925F3826B6CAE7CC9B7220 /* BuddyBuildSDK.framework */,
+				DA477872D9C0F4185293B860 /* AssetsLibrary.framework */,
+				0D30658F48BAF0C3DEEF884B /* CoreText.framework */,
+				8B5712D52F00EC4C11390FBB /* CoreTelephony.framework */,
+				ED020556FD77085FE868707F /* SystemConfiguration.framework */,
+				C834A736F91F7F5034F33434 /* QuartzCore.framework */,
+				607C2E4292D881B4F2B2B212 /* AVFoundation.framework */,
+				12A879468D5DFC0B8AF6CF11 /* CoreMedia.framework */,
+				F4E16DC1355CC29FDF9B40BF /* CoreVideo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,10 +384,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 55XTA39J9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SortingAlgorithms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan-Nechita.SortingAlgorithms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -351,10 +402,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 55XTA39J9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SortingAlgorithms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan-Nechita.SortingAlgorithms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
